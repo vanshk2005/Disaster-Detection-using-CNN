@@ -55,10 +55,9 @@ export default function AegisNavbar({ activeTab, onLaunch }) {
           whileTap={{ scale: 0.95 }}
           className="relative group px-6 py-2.5 bg-dark-900 border border-primary-500/30 text-primary-400 font-bold uppercase tracking-[0.2em] text-xs sm:text-sm rounded-lg overflow-hidden pointer-events-auto shadow-[0_0_20px_rgba(20,184,166,0.15)]"
         >
-          {/* Scanning Line Background */}
-          <div className="absolute inset-0 w-0 bg-primary-500/20 group-hover:w-full transition-all duration-700 ease-out" />
           
-          {/* Cyberpunk Glitch accent */}
+          <div className="absolute inset-0 w-0 bg-primary-500/20 group-hover:w-full transition-all duration-700 ease-out" />
+        
           <div className="absolute top-0 bottom-0 left-0 w-[3px] bg-primary-500 group-hover:bg-white animate-pulse" />
           <div className="absolute top-0 bottom-0 right-0 w-[3px] bg-primary-500 group-hover:bg-white animate-pulse" />
           

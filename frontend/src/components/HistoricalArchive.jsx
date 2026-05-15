@@ -22,8 +22,10 @@ function ImageRotator({ images }) {
           key={i}
           src={src}
           alt="Disaster imagery"
-          className="absolute inset-0 w-full h-full object-cover transition-all duration-1000 ease-in-out"
-          style={{ opacity: i === idx ? 1 : 0, transform: i === idx ? 'scale(1)' : 'scale(1.05)', willChange: 'opacity, transform' }}
+          loading="lazy"
+          decoding="async"
+          className="absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ease-in-out"
+          style={{ opacity: i === idx ? 1 : 0, willChange: 'opacity' }}
         />
       ))}
     </div>

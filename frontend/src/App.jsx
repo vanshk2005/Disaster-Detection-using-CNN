@@ -18,7 +18,6 @@ function App() {
       <MouseFollower />
       <AutonomousDrone />
 
-      {/* Background ambient lighting */}
       <div className="fixed inset-0 z-0 pointer-events-none">
         <div className="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] rounded-full bg-primary-600/10 blur-[120px]" />
         <div className="absolute bottom-[-10%] right-[-10%] w-[40%] h-[40%] rounded-full bg-blue-600/10 blur-[120px]" />
@@ -51,7 +50,7 @@ function App() {
               transition={{ duration: 0.6, delay: 0.2 }}
               className="w-full relative z-20 flex flex-col items-center"
             >
-              {/* Tabs toggle */}
+              
               <div className="flex bg-dark-800/80 p-1.5 rounded-full backdrop-blur-md border border-white/5 flex-wrap justify-center gap-2 shadow-2xl">
                 <button 
                   onClick={() => setActiveTab('live')}
@@ -100,7 +99,7 @@ function App() {
                         >
                           <div className="glass rounded-2xl p-8 text-center relative overflow-hidden">
                             <div className="absolute inset-0 bg-gradient-to-br from-primary-500/10 to-transparent pointer-events-none" />
-                              {/* Analysis Result Header */}
+                             
                               <h3 className="text-xl text-gray-400 font-medium mb-2 relative z-10">Analysis Result</h3>
                               <div className="text-4xl font-bold text-white mb-2 relative z-10 font-outfit drop-shadow-[0_0_10px_rgba(255,255,255,0.2)]">
                                 {prediction.class.replace('_', ' ')}
@@ -109,7 +108,7 @@ function App() {
                                 Confidence Level: {(prediction.confidence * 100).toFixed(1)}%
                               </div>
                               
-                              {/* Probability Distribution Graph */}
+                              
                               <div className="relative z-10 w-full mt-6 space-y-4">
                                 <h4 className="text-[10px] text-gray-500 uppercase tracking-[0.2em] text-left mb-3">Probability Distribution Matrix</h4>
                                 

@@ -7,6 +7,7 @@ export default function AutonomousDrone() {
   const springY = useSpring(mousePos.y, { stiffness: 50, damping: 15, mass: 1.5 });
 
   const [rotation, setRotation] = useState(0);
+  const [isHovering, setIsHovering] = useState(false);
 
   useEffect(() => {
     const handleMouseMove = (e) => {
